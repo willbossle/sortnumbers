@@ -1,0 +1,21 @@
+monitoring resources (memory, swap, CPU, Load, disk, critical kernel logs, network)
+core functions:
+- check if the services are up and running;
+- time of response to the server and to the client;
+- total amount of requests in the last hour(s) (1, 6, 12 and 24 hours);
+- total amount of requests in the last 5 minutes;
+- total amount of refused and dropped connections in the last hour and last 15 minutes (or less);
+- total amount of active connections;
+- total amount of memory usage and cpu used by the proxy process;
+- check if the host is up or down;
+- users connected with ssh in the server;
+- check for log errors in the last 1 hour every minute;
+- check the amount of handshakes;
+
+In order to monitor resources like CPU and memory we can use the items included in the standard template of linux systems
+
+- to check the errors and count all the requests, we can read the log with a grep using and expression to filter the date;
+
+- for errors 500 like we can read the log file with grep to filter the errors and collecting information;
+
+- to check the response time we need to create an item with the key like for example net.tcp.service.perf and then use it to create the triggers;
