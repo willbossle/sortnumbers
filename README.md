@@ -10,3 +10,5 @@
 
 # BUGS
 # Untill now I could not identify any bugs. If you find one, please let me know.
+
+# The file teste_2022-04-12.txt contains all the tests realized.
