@@ -16,6 +16,6 @@ In order to monitor resources like CPU and memory we can use the items included 
 
 - to check the errors and count all the requests, we can read the log with a grep using and expression to filter the date;
 
-- for errors 500 like we can read the log file with grep to filter the errors and collecting information;
+- for errors 500 like we can read the log file and filter with grep the errors and collect usefull information;
 
 - to check the response time we need to create an item with the key like for example net.tcp.service.perf and then use it to create the triggers;
